@@ -1,0 +1,1 @@
+export function Loading(){return <p className="state-card" role="status">Загружаем каталог…</p>}export function LoadError({message,onRetry}){return <div className="state-card error-card" role="alert"><p>{message}</p><button className="button button-outline" type="button" onClick={onRetry}>Повторить загрузку</button></div>}

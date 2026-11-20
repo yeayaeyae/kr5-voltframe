@@ -1,0 +1,209 @@
+[
+  {
+    "id": "phone-pro",
+    "title": "Смартфон Pro X",
+    "category": "Смартфоны",
+    "price": 49990,
+    "isAvailable": true,
+    "description": "Яркий OLED-экран, чёткая камера и аккумулятор на весь день.",
+    "image": "phone",
+    "features": [
+      {
+        "label": "Экран",
+        "value": "6,4 дюйма OLED"
+      },
+      {
+        "label": "Память",
+        "value": "256 ГБ"
+      },
+      {
+        "label": "Гарантия",
+        "value": "1 год"
+      }
+    ]
+  },
+  {
+    "id": "phone-lite",
+    "title": "Смартфон Lite 12",
+    "category": "Смартфоны",
+    "price": 32990,
+    "isAvailable": true,
+    "description": "Лёгкий смартфон для связи, фотографий и повседневных дел.",
+    "image": "phone",
+    "features": [
+      {
+        "label": "Экран",
+        "value": "6,1 дюйма AMOLED"
+      },
+      {
+        "label": "Память",
+        "value": "128 ГБ"
+      },
+      {
+        "label": "Гарантия",
+        "value": "1 год"
+      }
+    ]
+  },
+  {
+    "id": "phone-max",
+    "title": "Смартфон Max 15",
+    "category": "Смартфоны",
+    "price": 68990,
+    "isAvailable": false,
+    "description": "Большой экран и мощный процессор для работы и развлечений.",
+    "image": "phone",
+    "features": [
+      {
+        "label": "Экран",
+        "value": "6,8 дюйма OLED"
+      },
+      {
+        "label": "Память",
+        "value": "512 ГБ"
+      },
+      {
+        "label": "Гарантия",
+        "value": "1 год"
+      }
+    ]
+  },
+  {
+    "id": "laptop-air",
+    "title": "Ноутбук Air 15",
+    "category": "Ноутбуки",
+    "price": 79990,
+    "isAvailable": true,
+    "description": "Тонкий ноутбук для учёбы, работы и поездок.",
+    "image": "laptop",
+    "features": [
+      {
+        "label": "Экран",
+        "value": "15,3 дюйма IPS"
+      },
+      {
+        "label": "Память",
+        "value": "16 / 512 ГБ"
+      },
+      {
+        "label": "Гарантия",
+        "value": "1 год"
+      }
+    ]
+  },
+  {
+    "id": "laptop-studio",
+    "title": "Ноутбук Studio 14",
+    "category": "Ноутбуки",
+    "price": 119990,
+    "isAvailable": true,
+    "description": "Производительная модель для творчества и многозадачности.",
+    "image": "laptop",
+    "features": [
+      {
+        "label": "Экран",
+        "value": "14 дюймов IPS"
+      },
+      {
+        "label": "Память",
+        "value": "32 / 1 ТБ"
+      },
+      {
+        "label": "Гарантия",
+        "value": "2 года"
+      }
+    ]
+  },
+  {
+    "id": "laptop-go",
+    "title": "Ноутбук Go 13",
+    "category": "Ноутбуки",
+    "price": 59990,
+    "isAvailable": true,
+    "description": "Компактный ноутбук с долгим временем автономной работы.",
+    "image": "laptop",
+    "features": [
+      {
+        "label": "Экран",
+        "value": "13,3 дюйма IPS"
+      },
+      {
+        "label": "Память",
+        "value": "16 / 512 ГБ"
+      },
+      {
+        "label": "Гарантия",
+        "value": "1 год"
+      }
+    ]
+  },
+  {
+    "id": "sound-pro",
+    "title": "Наушники Sound Pro",
+    "category": "Наушники",
+    "price": 12990,
+    "isAvailable": true,
+    "description": "Чистое звучание, активное шумоподавление и удобная посадка.",
+    "image": "audio",
+    "features": [
+      {
+        "label": "Подключение",
+        "value": "Bluetooth 5.3"
+      },
+      {
+        "label": "Работа",
+        "value": "До 35 часов"
+      },
+      {
+        "label": "Гарантия",
+        "value": "1 год"
+      }
+    ]
+  },
+  {
+    "id": "sound-mini",
+    "title": "Наушники Sound Mini",
+    "category": "Наушники",
+    "price": 7990,
+    "isAvailable": true,
+    "description": "Компактная беспроводная гарнитура на каждый день.",
+    "image": "audio",
+    "features": [
+      {
+        "label": "Подключение",
+        "value": "Bluetooth 5.2"
+      },
+      {
+        "label": "Работа",
+        "value": "До 24 часов"
+      },
+      {
+        "label": "Гарантия",
+        "value": "1 год"
+      }
+    ]
+  },
+  {
+    "id": "sound-max",
+    "title": "Наушники Sound Max",
+    "category": "Наушники",
+    "price": 18990,
+    "isAvailable": false,
+    "description": "Объёмное звучание и мягкие амбушюры для долгих сессий.",
+    "image": "audio",
+    "features": [
+      {
+        "label": "Подключение",
+        "value": "Bluetooth 5.3"
+      },
+      {
+        "label": "Работа",
+        "value": "До 40 часов"
+      },
+      {
+        "label": "Гарантия",
+        "value": "2 года"
+      }
+    ]
+  }
+]

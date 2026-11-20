@@ -1,0 +1,1 @@
+import{Link}from'react-router-dom';export function NotFound(){return <section className="section container page-section"><div className="state-card"><p className="eyebrow">404 · СТРАНИЦА НЕ НАЙДЕНА</p><h1>Похоже, адрес устарел</h1><p>Вернитесь в каталог и продолжите выбор.</p><Link className="button" to="/catalog">Открыть каталог</Link></div></section>}

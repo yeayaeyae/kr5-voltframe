@@ -1,1 +1,52 @@
-import{Link}from'react-router-dom';import{money}from'../hooks.js';export function ProductCard({product,onAdd}){return <article className="product-card"><Link className="product-art" to={`/catalog/${product.id}`} aria-label={`Открыть ${product.title}`}><img src={`${import.meta.env.BASE_URL}images/${product.image}-480.svg`} srcSet={`${import.meta.env.BASE_URL}images/${product.image}-480.svg 480w, ${import.meta.env.BASE_URL}images/${product.image}-960.svg 960w`} sizes="(max-width: 640px) 90vw, (max-width: 1000px) 43vw, 300px" alt="" loading="lazy" width="480" height="320"/><span className="art-mark">{product.category}</span></Link><div className="product-info"><p className="eyebrow">{product.category}</p><h3><Link to={`/catalog/${product.id}`}>{product.title}</Link></h3><p className="product-description">{product.description}</p><div className="product-bottom"><strong>{money(product.price)}</strong><button className="button button-small" type="button" onClick={()=>onAdd(product)} disabled={!product.isAvailable}>{product.isAvailable?'В корзину':'Нет в наличии'}</button></div></div></article>}
+import { lazy, Suspense, useEffect, useRef, useState } from "react";
+import { Link } from "react-router-dom";
+import { money } from "../hooks.js";
+import { ProductVisual } from "./ProductVisual.jsx";
+
+const DeviceViewer = lazy(() => import("./DeviceViewer.jsx"));
+const showroomModels = new Set(["prism-x1", "orbit-14", "echo-neon"]);
+
+export function ProductCard({ product, onAdd }) {
+  const [added, setAdded] = useState(false);
+  const timer = useRef();
+  const productPath = `/catalog/${product.id}`;
+
+  useEffect(() => () => window.clearTimeout(timer.current), []);
+
+  function addProduct() {
+    onAdd(product);
+    setAdded(true);
+    window.clearTimeout(timer.current);
+    timer.current = window.setTimeout(() => setAdded(false), 1300);
+  }
+
+  return (
+    <article className="product-card">
+      <Link className="product-art" to={productPath} aria-label={`Открыть ${product.title}`} viewTransition>
+        {showroomModels.has(product.id) ? (
+          <Suspense fallback={<ProductVisual image={product.image} className="product-render" />}>
+            <div className="card-model"><DeviceViewer product={product} interactive={false} /></div>
+          </Suspense>
+        ) : <ProductVisual image={product.image} className="product-render" />}
+        <span className="product-arrow" aria-hidden="true">↗</span>
+      </Link>
+      <div className="product-info">
+        <p className="eyebrow">{product.category}</p>
+        <h3><Link to={productPath} viewTransition>{product.title}</Link></h3>
+        <p className="product-description">{product.description}</p>
+        <div className="product-bottom">
+          <strong>{money(product.price)}</strong>
+          <button
+            className={added ? "button button-small is-added" : "button button-small"}
+            type="button"
+            onClick={addProduct}
+            disabled={!product.isAvailable}
+          >
+            {product.isAvailable ? (added ? "Добавлено" : "В корзину") : "Нет в наличии"}
+          </button>
+        </div>
+        <span className="visually-hidden" role="status">{added ? `${product.title} добавлен в корзину` : ""}</span>
+      </div>
+    </article>
+  );
+}

@@ -1,5 +1,74 @@
 [
   {
+    "id": "prism-x1",
+    "title": "Смартфон Prism X1",
+    "category": "Смартфоны",
+    "price": 69990,
+    "isAvailable": true,
+    "description": "Титановый корпус с полупрозрачной кромкой и яркий OLED-экран.",
+    "image": "phone",
+    "features": [
+      {
+        "label": "Экран",
+        "value": "6,6 дюйма OLED, 120 Гц"
+      },
+      {
+        "label": "Память",
+        "value": "256 ГБ"
+      },
+      {
+        "label": "Корпус",
+        "value": "Титан"
+      }
+    ]
+  },
+  {
+    "id": "orbit-14",
+    "title": "Ноутбук Orbit 14",
+    "category": "Ноутбуки",
+    "price": 129990,
+    "isAvailable": true,
+    "description": "Тонкий корпус, клавиатура с мягкой подсветкой и OLED-дисплей для работы с графикой.",
+    "image": "laptop",
+    "features": [
+      {
+        "label": "Экран",
+        "value": "14 дюймов OLED"
+      },
+      {
+        "label": "Память",
+        "value": "32 ГБ / 1 ТБ"
+      },
+      {
+        "label": "Масса",
+        "value": "1,25 кг"
+      }
+    ]
+  },
+  {
+    "id": "echo-neon",
+    "title": "Наушники Echo Neon",
+    "category": "Наушники",
+    "price": 24990,
+    "isAvailable": true,
+    "description": "Мягкие тканевые амбушюры, активное шумоподавление и полупрозрачные чашки.",
+    "image": "audio",
+    "features": [
+      {
+        "label": "Подключение",
+        "value": "Bluetooth 5.3"
+      },
+      {
+        "label": "Автономность",
+        "value": "До 44 часов"
+      },
+      {
+        "label": "Шумоподавление",
+        "value": "Активное"
+      }
+    ]
+  },
+  {
     "id": "phone-pro",
     "title": "Смартфон Pro X",
     "category": "Смартфоны",

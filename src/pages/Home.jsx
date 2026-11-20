@@ -1,1 +1,56 @@
-import{Link}from'react-router-dom';import{useProducts,useCart}from'../hooks.js';import{ProductCard}from'../components/ProductCard.jsx';import{Loading,LoadError}from'../components/States.jsx';export function Home(){const{products,loading,error,reload}=useProducts(),{add}=useCart();return <><section className="hero"><div className="container hero-grid"><div className="hero-copy"><p className="eyebrow eyebrow-light">Технологии для каждого дня</p><h1>Хорошая техника. <em>Хороший выбор.</em></h1><p className="hero-lead">Подобрали устройства, которые помогают работать, учиться и отдыхать с удовольствием.</p><div className="hero-actions"><Link className="button button-light" to="/catalog">Выбрать устройство <span aria-hidden="true">↗</span></Link><span className="hero-note">Доставка по всей России</span></div></div><div className="hero-visual" aria-hidden="true"><div className="orbit orbit-one"/><div className="orbit orbit-two"/><div className="hero-device"><span className="device-dot"/><span className="device-screen"/></div><span className="hero-float float-a">TECH<br/>FOR LIFE</span><span className="hero-float float-b">01 — 09</span></div></div><div className="hero-ribbon"><div className="container ribbon-inner"><span>Смартфоны</span><b>✳</b><span>Ноутбуки</span><b>✳</b><span>Наушники</span><b>✳</b><span>Выбор без шума</span></div></div></section><section className="section container"><div className="section-heading"><div><p className="eyebrow">Подобрали для вас</p><h2>Популярные устройства</h2></div><Link className="text-link" to="/catalog">Весь каталог ↗</Link></div>{loading?<Loading/>:error?<LoadError message={error} onRetry={()=>reload()}/>:<div className="product-grid featured-grid">{products.slice(0,3).map(p=><ProductCard key={p.id} product={p} onAdd={()=>add(p.id)}/>)}</div>}</section><section className="promise-section"><div className="container promise-grid">{[['01','Понятный выбор','Характеристики и цены без сложных условий.'],['02','Надёжная покупка','Проверяем каждый заказ перед отправкой.'],['03','Помощь рядом','Подскажем с выбором до и после покупки.']].map(([n,t,d])=><div key={n}><span className="promise-number">{n}</span><h3>{t}</h3><p>{d}</p></div>)}</div></section></>}
+import { lazy, Suspense } from "react";
+import { Link } from "react-router-dom";
+import { useCart, useProducts } from "../hooks.js";
+import { edition } from "../editions.js";
+import { ProductCard } from "../components/ProductCard.jsx";
+import { ProductVisual } from "../components/ProductVisual.jsx";
+import { Loading, LoadError } from "../components/States.jsx";
+
+const DeviceViewer = lazy(() => import("../components/DeviceViewer.jsx"));
+
+export function Home() {
+  const { products, loading, error, reload } = useProducts();
+  const { add } = useCart();
+  const featured = { id: edition.featured, image: edition.model };
+
+  return (
+    <>
+      <section className="edition-hero">
+        <div className="container edition-hero-grid">
+          <div className="edition-copy">
+            <p className="edition-kicker">{edition.category}</p>
+            <h1>{edition.title}</h1>
+            <p className="edition-description">{edition.description}</p>
+            <div className="edition-actions">
+              <Link className="button" to="/catalog" viewTransition>Открыть каталог <span aria-hidden="true">↗</span></Link>
+              <Link className="edition-text-link" to={`/catalog/${edition.featured}`} viewTransition>О {edition.product}</Link>
+            </div>
+          </div>
+          <div className="edition-feature">
+            <figure className="edition-figure">
+              <Suspense fallback={<ProductVisual image={edition.model} className="featured-fallback" eager />}>
+                <DeviceViewer product={featured} controls />
+              </Suspense>
+              <figcaption>{edition.product}</figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+      <section className="section container">
+        <div className="section-heading">
+          <h2>Новые модели</h2>
+          <Link className="text-link" to="/catalog" viewTransition>Все товары ↗</Link>
+        </div>
+        {loading ? <Loading /> : error ? (
+          <LoadError message={error} onRetry={() => reload()} />
+        ) : (
+          <div className="product-grid featured-grid">
+            {products.slice(0, 3).map(product => (
+              <ProductCard key={product.id} product={product} onAdd={({ id }) => add(id)} />
+            ))}
+          </div>
+        )}
+      </section>
+    </>
+  );
+}

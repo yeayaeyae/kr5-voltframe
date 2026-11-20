@@ -1,5 +1,5 @@
 {
-  "name": "kr5-react-shop",
+  "name": "kr5-voltframe",
   "private": true,
   "version": "1.0.0",
   "type": "module",
@@ -10,10 +10,10 @@
   },
   "dependencies": {
     "@vitejs/plugin-react": "latest",
-    "vite": "latest",
     "react": "latest",
     "react-dom": "latest",
-    "react-router-dom": "latest"
-  },
-  "devDependencies": {}
+    "react-router-dom": "latest",
+    "three": "0.187.0",
+    "vite": "latest"
+  }
 }

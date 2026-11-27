@@ -1,7 +1,7 @@
 import { useLayoutEffect, useState } from "react";
 import { Link, NavLink, Outlet, useLocation } from "react-router-dom";
 import { useCart } from "../hooks.js";
-import { editions, editionId } from "../editions.js";
+import { editions, editionId, siteBase } from "../editions.js";
 
 export function Layout() {
   const [open, setOpen] = useState(false);
@@ -21,6 +21,13 @@ export function Layout() {
           <Link to="/" className="brand" onClick={closeMenu} viewTransition>
             VOLT<span>FRAME</span>
           </Link>
+          <NavLink className="mobile-cart-link" to="/cart" aria-label={`Корзина, ${count}`}
+            onClick={closeMenu} viewTransition>
+            <svg width="19" height="19" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <path d="M5 8h14l1.7 12H3.3L5 8Zm4 0V6a3 3 0 1 1 6 0v2" stroke="currentColor" strokeWidth="1.6" strokeLinejoin="round" />
+            </svg>
+            <span className="cart-count" key={count} data-cart-flight-target>{count}</span>
+          </NavLink>
           <button
             className="menu-toggle"
             type="button"
@@ -34,8 +41,8 @@ export function Layout() {
             <NavLink to="/" end onClick={closeMenu} viewTransition>Главная</NavLink>
             <NavLink to="/catalog" onClick={closeMenu} viewTransition>Каталог</NavLink>
             <NavLink to="/order" onClick={closeMenu} viewTransition>Заявка</NavLink>
-            <NavLink to="/cart" onClick={closeMenu} viewTransition>
-              Корзина <span className="cart-count" key={count}>{count}</span>
+            <NavLink className="desktop-cart-link" to="/cart" onClick={closeMenu} viewTransition>
+              Корзина <span className="cart-count" key={count} data-cart-flight-target>{count}</span>
             </NavLink>
           </nav>
         </div>
@@ -50,7 +57,7 @@ export function Layout() {
           <Link to="/" className="brand brand-footer" viewTransition>VOLT<span>FRAME</span></Link>
           <nav className="edition-switch" aria-label="Версии дизайна">
             {Object.entries(editions).map(([id, { name }]) => (
-              <a key={id} href={`/${id}${pathname}${search}`} aria-current={id === editionId ? "true" : undefined}>
+              <a key={id} href={`${siteBase}${id}${pathname}${search}`} aria-current={id === editionId ? "true" : undefined}>
                 {name}
               </a>
             ))}

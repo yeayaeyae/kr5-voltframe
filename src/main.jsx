@@ -12,6 +12,9 @@ import { editionBase, editionId } from "./editions.js";
 import "./styles.css";
 import "./showroom.css";
 import "./editions.css";
+import "./cinematic.css";
+import "./interior.css";
+import "./teardown.css";
 
 document.documentElement.dataset.edition = editionId;
 

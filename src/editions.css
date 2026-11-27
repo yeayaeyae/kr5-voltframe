@@ -159,6 +159,7 @@ body { background: var(--body-bg); }
 }
 .device-controls { margin: 10px 0 0; display: flex; flex-wrap: wrap; justify-content: center; gap: 6px; }
 .device-controls button { min-height: 40px; min-width: 40px; }
+.device-controls button:disabled { cursor: default; opacity: .45; }
 
 .catalog-toolbar, .state-card, .order-form { background: var(--surface); }
 .catalog-toolbar input, .catalog-toolbar select, .order-form :is(input, select, textarea), .quantity button {

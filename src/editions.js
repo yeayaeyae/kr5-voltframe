@@ -28,7 +28,10 @@ export const editions = {
   },
 };
 
-const firstSegment = window.location.pathname.split("/")[1];
-export const editionId = Object.hasOwn(editions, firstSegment) ? firstSegment : "studio";
+export const siteBase = import.meta.env?.BASE_URL ?? "/";
+const pathname = globalThis.location?.pathname ?? siteBase;
+const firstSegment = pathname.slice(siteBase.length).split("/")[0];
+const hasEditionPrefix = Object.hasOwn(editions, firstSegment);
+export const editionId = hasEditionPrefix ? firstSegment : "studio";
 export const edition = editions[editionId];
-export const editionBase = Object.hasOwn(editions, firstSegment) ? `/${firstSegment}` : "/";
+export const editionBase = hasEditionPrefix ? `${siteBase}${firstSegment}` : siteBase;

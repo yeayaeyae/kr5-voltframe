@@ -20,6 +20,23 @@
         "label": "Корпус",
         "value": "Титан"
       }
+    ],
+    "colors": [
+      {
+        "id": "titanium",
+        "name": "Титан",
+        "hex": "#858d9f"
+      },
+      {
+        "id": "graphite",
+        "name": "Графит",
+        "hex": "#353c49"
+      },
+      {
+        "id": "blue",
+        "name": "Океан",
+        "hex": "#527298"
+      }
     ]
   },
   {
@@ -42,6 +59,23 @@
       {
         "label": "Масса",
         "value": "1,25 кг"
+      }
+    ],
+    "colors": [
+      {
+        "id": "silver",
+        "name": "Серебро",
+        "hex": "#bdc5cf"
+      },
+      {
+        "id": "graphite",
+        "name": "Графит",
+        "hex": "#353c49"
+      },
+      {
+        "id": "sand",
+        "name": "Песочный",
+        "hex": "#bc927c"
       }
     ]
   },
@@ -66,6 +100,23 @@
         "label": "Шумоподавление",
         "value": "Активное"
       }
+    ],
+    "colors": [
+      {
+        "id": "lilac",
+        "name": "Лавандовый",
+        "hex": "#957fb9"
+      },
+      {
+        "id": "jade",
+        "name": "Нефрит",
+        "hex": "#36776a"
+      },
+      {
+        "id": "graphite",
+        "name": "Графит",
+        "hex": "#353c49"
+      }
     ]
   },
   {
@@ -88,6 +139,23 @@
       {
         "label": "Гарантия",
         "value": "1 год"
+      }
+    ],
+    "colors": [
+      {
+        "id": "blue",
+        "name": "Океан",
+        "hex": "#527298"
+      },
+      {
+        "id": "titanium",
+        "name": "Титан",
+        "hex": "#858d9f"
+      },
+      {
+        "id": "graphite",
+        "name": "Графит",
+        "hex": "#353c49"
       }
     ]
   },
@@ -112,6 +180,23 @@
         "label": "Гарантия",
         "value": "1 год"
       }
+    ],
+    "colors": [
+      {
+        "id": "sand",
+        "name": "Песочный",
+        "hex": "#bc927c"
+      },
+      {
+        "id": "titanium",
+        "name": "Титан",
+        "hex": "#858d9f"
+      },
+      {
+        "id": "graphite",
+        "name": "Графит",
+        "hex": "#353c49"
+      }
     ]
   },
   {
@@ -134,6 +219,23 @@
       {
         "label": "Гарантия",
         "value": "1 год"
+      }
+    ],
+    "colors": [
+      {
+        "id": "graphite",
+        "name": "Графит",
+        "hex": "#353c49"
+      },
+      {
+        "id": "titanium",
+        "name": "Титан",
+        "hex": "#858d9f"
+      },
+      {
+        "id": "blue",
+        "name": "Океан",
+        "hex": "#527298"
       }
     ]
   },
@@ -158,6 +260,23 @@
         "label": "Гарантия",
         "value": "1 год"
       }
+    ],
+    "colors": [
+      {
+        "id": "sand",
+        "name": "Песочный",
+        "hex": "#bc927c"
+      },
+      {
+        "id": "silver",
+        "name": "Серебро",
+        "hex": "#bdc5cf"
+      },
+      {
+        "id": "graphite",
+        "name": "Графит",
+        "hex": "#353c49"
+      }
     ]
   },
   {
@@ -180,6 +299,23 @@
       {
         "label": "Гарантия",
         "value": "2 года"
+      }
+    ],
+    "colors": [
+      {
+        "id": "graphite",
+        "name": "Графит",
+        "hex": "#353c49"
+      },
+      {
+        "id": "silver",
+        "name": "Серебро",
+        "hex": "#bdc5cf"
+      },
+      {
+        "id": "sand",
+        "name": "Песочный",
+        "hex": "#bc927c"
       }
     ]
   },
@@ -204,6 +340,23 @@
         "label": "Гарантия",
         "value": "1 год"
       }
+    ],
+    "colors": [
+      {
+        "id": "titanium",
+        "name": "Титан",
+        "hex": "#858d9f"
+      },
+      {
+        "id": "silver",
+        "name": "Серебро",
+        "hex": "#bdc5cf"
+      },
+      {
+        "id": "graphite",
+        "name": "Графит",
+        "hex": "#353c49"
+      }
     ]
   },
   {
@@ -226,6 +379,23 @@
       {
         "label": "Гарантия",
         "value": "1 год"
+      }
+    ],
+    "colors": [
+      {
+        "id": "jade",
+        "name": "Нефрит",
+        "hex": "#36776a"
+      },
+      {
+        "id": "lilac",
+        "name": "Лавандовый",
+        "hex": "#957fb9"
+      },
+      {
+        "id": "graphite",
+        "name": "Графит",
+        "hex": "#353c49"
       }
     ]
   },
@@ -250,6 +420,23 @@
         "label": "Гарантия",
         "value": "1 год"
       }
+    ],
+    "colors": [
+      {
+        "id": "lilac",
+        "name": "Лавандовый",
+        "hex": "#957fb9"
+      },
+      {
+        "id": "jade",
+        "name": "Нефрит",
+        "hex": "#36776a"
+      },
+      {
+        "id": "graphite",
+        "name": "Графит",
+        "hex": "#353c49"
+      }
     ]
   },
   {
@@ -273,6 +460,197 @@
         "label": "Гарантия",
         "value": "2 года"
       }
+    ],
+    "colors": [
+      {
+        "id": "blue",
+        "name": "Океан",
+        "hex": "#527298"
+      },
+      {
+        "id": "lilac",
+        "name": "Лавандовый",
+        "hex": "#957fb9"
+      },
+      {
+        "id": "jade",
+        "name": "Нефрит",
+        "hex": "#36776a"
+      }
+    ]
+  },
+  {
+    "id": "pulse-64",
+    "title": "Флешка Pulse 64",
+    "category": "Флешки",
+    "price": 1490,
+    "isAvailable": true,
+    "description": "Компактная металлическая флешка с USB-A и петлёй для ключей.",
+    "image": "flash",
+    "features": [
+      {
+        "label": "Объём",
+        "value": "64 ГБ"
+      },
+      {
+        "label": "Разъём",
+        "value": "USB-A"
+      },
+      {
+        "label": "Интерфейс",
+        "value": "USB 3.2 Gen 1"
+      }
+    ],
+    "colors": [
+      {
+        "id": "graphite",
+        "name": "Графит",
+        "hex": "#353c49"
+      },
+      {
+        "id": "silver",
+        "name": "Серебро",
+        "hex": "#bdc5cf"
+      },
+      {
+        "id": "jade",
+        "name": "Нефрит",
+        "hex": "#36776a"
+      }
+    ]
+  },
+  {
+    "id": "shift-duo-128",
+    "title": "Флешка Shift Duo 128",
+    "category": "Флешки",
+    "price": 2490,
+    "isAvailable": true,
+    "description": "Два разъёма на одном накопителе. Переносите файлы между компьютером и устройствами с USB-C.",
+    "image": "flash",
+    "features": [
+      {
+        "label": "Объём",
+        "value": "128 ГБ"
+      },
+      {
+        "label": "Разъёмы",
+        "value": "USB-A и USB-C"
+      },
+      {
+        "label": "Интерфейс",
+        "value": "USB 3.2 Gen 1"
+      }
+    ],
+    "colors": [
+      {
+        "id": "silver",
+        "name": "Серебро",
+        "hex": "#bdc5cf"
+      },
+      {
+        "id": "blue",
+        "name": "Океан",
+        "hex": "#527298"
+      },
+      {
+        "id": "lilac",
+        "name": "Лавандовый",
+        "hex": "#957fb9"
+      }
+    ]
+  },
+  {
+    "id": "prism-neo",
+    "title": "Смартфон Prism Neo",
+    "category": "Смартфоны",
+    "price": 54990,
+    "isAvailable": true,
+    "description": "Компактный смартфон с плавным OLED-дисплеем и оптической стабилизацией основной камеры.",
+    "image": "phone",
+    "features": [
+      { "label": "Экран", "value": "6,1 дюйма OLED, 120 Гц" },
+      { "label": "Память", "value": "128 ГБ" },
+      { "label": "Камера", "value": "50 МП, оптическая стабилизация" },
+      { "label": "Аккумулятор", "value": "4 500 мА·ч" },
+      { "label": "Корпус", "value": "Алюминиевая рамка" }
+    ],
+    "colors": [
+      { "id": "mint", "name": "Мята", "hex": "#579f8b" },
+      { "id": "graphite", "name": "Графит", "hex": "#3e4650" }
+    ]
+  },
+  {
+    "id": "prism-ultra",
+    "title": "Смартфон Prism Ultra",
+    "category": "Смартфоны",
+    "price": 94990,
+    "isAvailable": true,
+    "description": "Большой OLED с переменной частотой, телефото с пятикратным зумом и накопитель на 512 ГБ.",
+    "image": "phone",
+    "features": [
+      { "label": "Экран", "value": "6,8 дюйма LTPO OLED, 1–120 Гц" },
+      { "label": "Память", "value": "512 ГБ" },
+      { "label": "Камера", "value": "50 МП + 48 МП + 48 МП, оптический зум 5×" },
+      { "label": "Аккумулятор", "value": "5 500 мА·ч" },
+      { "label": "Корпус", "value": "Титановая рамка" }
+    ],
+    "colors": [
+      { "id": "copper", "name": "Медь", "hex": "#ad7460" },
+      { "id": "titanium", "name": "Титан", "hex": "#81919e" }
+    ]
+  },
+  {
+    "id": "tempo-active",
+    "title": "Смарт-часы Tempo Active",
+    "category": "Смарт-часы",
+    "price": 15990,
+    "isAvailable": true,
+    "description": "Лёгкие часы с силиконовым ремешком, уведомлениями и режимами тренировок.",
+    "image": "watch",
+    "features": [
+      { "label": "Экран", "value": "1,74 дюйма AMOLED" },
+      { "label": "Навигация", "value": "GPS и ГЛОНАСС" },
+      { "label": "Автономность", "value": "До 10 дней" }
+    ],
+    "colors": [
+      { "id": "green", "name": "Хвойный", "hex": "#5c8777" },
+      { "id": "lilac", "name": "Сирень", "hex": "#a997ca" }
+    ]
+  },
+  {
+    "id": "tempo-trail",
+    "title": "Смарт-часы Tempo Trail",
+    "category": "Смарт-часы",
+    "price": 25990,
+    "isAvailable": true,
+    "description": "Модель для походов с ярким экраном, двухчастотным GPS и физическими кнопками.",
+    "image": "watch",
+    "features": [
+      { "label": "Экран", "value": "1,96 дюйма AMOLED" },
+      { "label": "Навигация", "value": "Двухчастотный GPS" },
+      { "label": "Автономность", "value": "До 16 дней" }
+    ],
+    "colors": [
+      { "id": "orange", "name": "Янтарь", "hex": "#cc7d43" },
+      { "id": "graphite", "name": "Графит", "hex": "#53616e" }
+    ]
+  },
+  {
+    "id": "flux-20",
+    "title": "Пауэрбанк Flux 20",
+    "category": "Пауэрбанки",
+    "price": 5490,
+    "isAvailable": true,
+    "description": "Внешний аккумулятор с индикатором заряда и двумя портами USB-C для телефона и аксессуаров.",
+    "image": "powerbank",
+    "features": [
+      { "label": "Ёмкость", "value": "20 000 мА·ч" },
+      { "label": "Мощность", "value": "До 45 Вт по USB Power Delivery" },
+      { "label": "Разъёмы", "value": "2 × USB-C" }
+    ],
+    "colors": [
+      { "id": "blue", "name": "Синий металл", "hex": "#587082" },
+      { "id": "sand", "name": "Песочный", "hex": "#bba88d" }
     ]
   }
 ]
